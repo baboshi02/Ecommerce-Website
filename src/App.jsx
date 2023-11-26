@@ -7,7 +7,7 @@ import "./index.css";
 
 function App() {
     return (
-        <div className="h-screen bg-gray-500">
+        <div >
             <ShopContextProvider>
                 <Router>
                     <Navbar />
