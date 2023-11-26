@@ -1,9 +1,9 @@
 import { Navbar } from "./components/navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { ShoppingCart } from "./pages/Cart";
-import { Shop } from "./pages/Homepage/shoppingcart";
-import "./index.css";
+import { ShoppingCart } from "./pages/Shopping Cart/ShoppingCart";
+import { Shop } from "./pages/Homepage/HomePage";
 import { ShopContextProvider } from "./context/shop-context";
+import "./index.css";
 
 function App() {
     return (
