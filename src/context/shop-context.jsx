@@ -25,13 +25,20 @@ export const ShopContextProvider = (props) => {
         }
         return total
     }
+    const isEmpty=()=>{
+        for(let item in cartItems){
+            if(cartItems[item]>0)
+                return false 
+        }
+        return true
+    }
     const addItem=(id)=>{
         setCartItems((prev)=>({...prev,[id] :cartItems[id]+1}))
     }
     const removeItem=(id)=>{
         setCartItems((prev)=>({...prev,[id]:cartItems[id]-1}))
     }
-    const contextValue={cartItems,addItem,removeItem,totalAmount}
+    const contextValue={cartItems,addItem,removeItem,totalAmount, isEmpty}
 
     return <ShopContext.Provider value={contextValue}>{props.children}</ShopContext.Provider>;
 };
