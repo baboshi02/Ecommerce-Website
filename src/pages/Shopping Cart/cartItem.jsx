@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { ShopContext } from "../../context/shop-context";
 
 export const CartItem = (props) => {
-    const { name, photo,id } = props.product;
+    const { name, photo,id,price } = props.product;
     const itemCount=props.Amount
     const {addItem,removeItem}=useContext(ShopContext)
     console.log(itemCount)
@@ -13,11 +13,15 @@ export const CartItem = (props) => {
                 <b>{name.toUpperCase()}</b>
             </p>
             <p>
+                {price}$
+            </p>
+            <p>
                 Amount: {itemCount}
             </p>
+            
             <div>
-                <button onClick={()=>addItem(id)} className="bg-pink-300 text-PrimaryColor rounded-md p-0.5 px-2 m-1  hover:bg-pink-400 hover:text-gray-200 border border-PrimaryColor hover:border-gray-500">+</button>
-                <button onClick={()=>removeItem(id)} className="bg-pink-300 text-PrimaryColor rounded-md p-0.5 px-2  hover:bg-pink-400 hover:text-gray-200 border border-PrimaryColor hover:border-gray-500">-</button>
+                <button onClick={()=>addItem(id)} className="rounded-md p-0.5 px-2 m-1 bg-PrimaryColor text-SecondaryColor  hover:bg-gray-400 hover:text-gray-200   hover:border-PrimaryColor">+</button>
+                <button onClick={()=>removeItem(id)} className="rounded-md p-0.5 px-2 bg-PrimaryColor text-SecondaryColor  hover:bg-gray-400 hover:text-gray-200   hover:border-PrimaryColor">-</button>
 
             </div>
         </div>

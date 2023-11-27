@@ -14,7 +14,7 @@ export const Product = (props) => {
             <p>{price}$</p>
             <button
                 onClick={() => addItem(id)}
-                className="bg-pink-300 rounded-lg p-0.5 hover:bg-pink-400 hover:text-gray-200 shadow-md text-PrimaryColor border border-PrimaryColor hover:border-gray-500"
+                className="shadow-md rounded-lg p-0.5 bg-PrimaryColor text-SecondaryColor  hover:bg-gray-400 hover:text-gray-200  hover:border-PrimaryColor"
             >
                 Add to cart {cartItems[id] > 0 && <>({cartItems[id]})</>}
             </button>

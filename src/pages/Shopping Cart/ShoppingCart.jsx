@@ -2,9 +2,11 @@ import { useContext } from "react";
 import Items from "../../Dummy";
 import { ShopContext } from "../../context/shop-context";
 import { CartItem } from "./cartItem";
+import { ShoppingCartFooter } from "./ShoppingCartFooter";
+
 export const ShoppingCart = () => {
-    const { cartItems ,totalAmount} = useContext(ShopContext);
-    const amount=totalAmount()
+    const { cartItems, totalAmount } = useContext(ShopContext);
+    const amount = totalAmount();
 
     return (
         <div>
@@ -13,11 +15,20 @@ export const ShoppingCart = () => {
                 <br />
             </h1>
             <div className="flex flex-col items-center my-5 mx-12">
-                {Items.map((item) => {    
-                    const itemCount=cartItems[item.id]
-                    console.log(item.name,":",itemCount)
-                    return itemCount>0&&<CartItem key={item.id} product={item} Amount={itemCount}/>
-})}
+                {Items.map((item) => {
+                    const itemCount = cartItems[item.id];
+                    console.log(item.name, ":", itemCount);
+                    return (
+                        itemCount > 0 && (
+                            <CartItem
+                                key={item.id}
+                                product={item}
+                                Amount={itemCount}
+                            />
+                        )
+                    );
+                })}
+                <ShoppingCartFooter Amount={amount}/>
             </div>
         </div>
     );
