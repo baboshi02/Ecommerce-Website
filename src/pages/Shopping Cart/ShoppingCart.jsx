@@ -3,12 +3,14 @@ import Items from "../../Dummy";
 import { ShopContext } from "../../context/shop-context";
 import { CartItem } from "./cartItem";
 export const ShoppingCart = () => {
-    const { cartItems } = useContext(ShopContext);
+    const { cartItems ,totalAmount} = useContext(ShopContext);
+    const amount=totalAmount()
 
     return (
         <div>
             <h1 className="text-center text-5xl text-PrimaryColor">
                 Shopping Cart
+                <br />
             </h1>
             <div className="flex flex-col items-center my-5 mx-12">
                 {Items.map((item) => {    
