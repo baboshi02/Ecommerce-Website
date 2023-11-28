@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 console.log(window.location.pathname)
-
 export const Navbar = () => {
   return (
     <div className="bg-PrimaryColor w-full h-14 text-SecondaryColor flex justify-end items-center px-2 ">

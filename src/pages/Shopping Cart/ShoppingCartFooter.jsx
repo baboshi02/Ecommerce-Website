@@ -13,7 +13,7 @@ export const ShoppingCartFooter = (props) => {
                 <button  className={buttonStyle} onClick={()=>navigate('/')}>
                     Back
                 </button>
-                <button className={buttonStyle}>
+                <button className={buttonStyle} onClick={()=>navigate('/final')}>
                     Proceed
                 </button>
             </div>

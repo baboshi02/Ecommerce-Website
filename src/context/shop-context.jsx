@@ -38,7 +38,7 @@ export const ShopContextProvider = (props) => {
     const removeItem=(id)=>{
         setCartItems((prev)=>({...prev,[id]:cartItems[id]-1}))
     }
-    const contextValue={cartItems,addItem,removeItem,totalAmount, isEmpty}
+    const contextValue={cartItems,addItem,removeItem,totalAmount, isEmpty,getDefaultCart,setCartItems}
 
     return <ShopContext.Provider value={contextValue}>{props.children}</ShopContext.Provider>;
 };

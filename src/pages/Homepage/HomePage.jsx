@@ -1,6 +1,5 @@
 import Items from "../../Dummy";
 import { Product } from "./product";
-console.log(window.location.pathname)
 export const Shop = () => {
     return (
         <>
