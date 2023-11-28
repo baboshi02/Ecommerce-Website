@@ -16,7 +16,6 @@ export const ShoppingCart = () => {
         return(<div className="flex flex-col items-center my-5 mx-12">
         {Items.map((item) => {
             const itemCount = cartItems[item.id];
-            console.log(item.name, ":", itemCount);
             return (
                 itemCount > 0 && (
                     <CartItem
