@@ -1,6 +1,9 @@
 import { useNavigate } from "react-router-dom";
 export const EmptyCart = () => {
     const navigate =useNavigate()
+    setTimeout(()=>{
+        navigate('/')
+    },2000)
     return(
         <div className="text-center text-PrimaryColor flex flex-col justify-center items-center text-lg h-28">
             <h1>

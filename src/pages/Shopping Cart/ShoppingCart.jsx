@@ -2,7 +2,7 @@ import { useContext } from "react";
 import Items from "../../Dummy";
 import { ShopContext } from "../../context/shop-context";
 import { CartItem } from "./cartItem";
-import { ShoppingCartFooter } from "./ShoppingCartFooter";
+import { ShoppingCartFooter } from "../../components/ShoppingCartFooter";
 import { EmptyCart } from "./emptyCart";
 
 export const ShoppingCart = () => {
