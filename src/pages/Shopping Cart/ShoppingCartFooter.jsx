@@ -7,7 +7,7 @@ export const ShoppingCartFooter = (props) => {
     return (
         <div>
             <h1>
-                <b>Total Price: {Amount}$ </b>
+                <b>Total Price: {Amount.toLocaleString('en-US')}$ </b>
             </h1>
             <div className="flex justify-center">
                 <button  className={buttonStyle} onClick={()=>navigate('/')}>
