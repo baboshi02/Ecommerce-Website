@@ -1,10 +1,10 @@
 # Ecommerce Website
 Simple Ecommerce website that uses fake data. Implemented with React js.
 
-##Prerequisites
+## Prerequisites
 -Node JS
 
-##Installation
+## Installation
 
 ```bash
 git clone https://github.com/baboshi02/Ecommerce.git
