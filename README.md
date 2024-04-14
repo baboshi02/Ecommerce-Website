@@ -16,4 +16,4 @@ npm install
 npm run dev
 ```
 ## preview
-<!-- To Do -->
+https://baboshi02.github.io/Ecommerce-Website/
