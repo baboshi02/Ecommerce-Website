@@ -16,4 +16,4 @@ npm install
 npm run dev
 ```
 ## preview
-https://baboshi02.github.io/Ecommerce-Website/
+[Ecommerce Website](https://baboshi02.github.io/Ecommerce-Website/)
